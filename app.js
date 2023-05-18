@@ -1,3 +1,5 @@
-const input = 3;
-const nb = Number(input); // nb's type is number
-alert(nb);
+let number = 1;
+while (number <= 5) {
+  console.log(number);
+  // The number variable is never updated: the loop condition stays true forever
+}
