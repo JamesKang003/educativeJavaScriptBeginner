@@ -1,26 +1,11 @@
-function calculate(num1, operator, num2) {
-  switch (operator) {
-    case "+":
-      console.log(num1 + num2);
-      break;
-
-    case "-":
-      console.log(num1 - num2);
-      break;
-
-    case "*":
-      console.log(num1 * num2);
-      break;
-
-    case "/":
-      console.log(num1 / num2);
-      break;
-    default:
-      console.log(undefined);
-  }
+function circumference(radius) {
+  var circum = 2 * Math.PI * radius;
+  console.log(circum);
 }
 
-calculate(12, "+", 2);
-calculate(12, "-", 2);
-calculate(12, "*", 2);
-calculate(12, "/", 2);
+function area(radius) {
+  var area = Math.PI * radius ** 2;
+  console.log(area);
+}
+circumference(4);
+area(4);
