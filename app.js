@@ -1,13 +1,26 @@
-let num = 1;
+function calculate(num1, operator, num2) {
+  switch (operator) {
+    case "+":
+      console.log(num1 + num2);
+      break;
 
-while (num <= 100) {
-  if (num % 3 == 0 && num % 5 == 0) {
-    console.log("FizzBuzz");
-  } else if (num % 3 == 0) {
-    console.log("Fizz");
-  } else if (num % 5 == 0) {
-    console.log("Buzz");
-  } else console.log(num);
+    case "-":
+      console.log(num1 - num2);
+      break;
 
-  num++;
+    case "*":
+      console.log(num1 * num2);
+      break;
+
+    case "/":
+      console.log(num1 / num2);
+      break;
+    default:
+      console.log(undefined);
+  }
 }
+
+calculate(12, "+", 2);
+calculate(12, "-", 2);
+calculate(12, "*", 2);
+calculate(12, "/", 2);
