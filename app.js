@@ -1,11 +1,14 @@
-function circumference(radius) {
-  var circum = 2 * Math.PI * radius;
-  console.log(circum);
-}
+var circle = {
+  radius: 10,
+  // Write code here
+  circumference() {
+    return (this.radius * 2 * Math.PI).toFixed(2);
+  },
+  area() {
+    return (this.radius ** 2 * Math.PI).toFixed(2);
+  },
+};
 
-function area(radius) {
-  var area = Math.PI * radius ** 2;
-  console.log(area);
-}
-circumference(4);
-area(4);
+console.log(circle.circumference());
+
+console.log(circle.area());
