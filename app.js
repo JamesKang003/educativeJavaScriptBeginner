@@ -1,14 +1,12 @@
-var circle = {
-  radius: 10,
-  // Write code here
-  circumference() {
-    return (this.radius * 2 * Math.PI).toFixed(2);
+var account = {
+  name: "Alex",
+  balance: 0,
+  credit(num) {
+    this.balance += num;
   },
-  area() {
-    return (this.radius ** 2 * Math.PI).toFixed(2);
+  describe() {
+    return `${this.name} has $ ${this.balance} in his bank account`;
   },
 };
 
-console.log(circle.circumference());
-
-console.log(circle.area());
+console.log(account.describe());
