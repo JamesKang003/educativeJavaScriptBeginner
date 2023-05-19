@@ -1,9 +1,16 @@
-let n = 1;
-let check = false;
-for (let i = 1; check == false; i++) {
-  if (i % 2 === 1) {
-    console.log(`${i} is odd`);
-    if (n == 10) check = true;
-    n++;
+let num = 1;
+while (num <= 100) {
+  switch (num) {
+    case num % 3 == 0 && num % 5 == 0:
+      console.log("FizzBuzz");
+    case num % 3 == 0:
+      console.log("Fizz");
+      break;
+    case num % 5 == 0:
+      console.log("Buzz");
+      break;
+    default:
+      console.log(num);
   }
+  num++;
 }
