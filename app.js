@@ -1,10 +1,15 @@
-function reverse(word) {
+class Dog {
   // Write - Your - Code
-  let result = "";
-  let size = word.length;
-  for (let i = 0; i < size; i++) {
-    result += word[size - i - 1];
+  constructor(name, species, size) {
+    this.name = name;
+    this.species = species;
+    this.size = size;
   }
-
-  return result;
+  bark() {
+    if (this.size > 60) {
+      return "Grrr! Grrr!";
+    } else {
+      return "Woof! Woof!";
+    }
+  }
 }
