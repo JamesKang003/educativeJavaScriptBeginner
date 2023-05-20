@@ -1,11 +1,10 @@
-function vowels(word) {
+function reverse(word) {
   // Write - Your - Code
-  let vowels = ["a", "e", "i", "o", "u"];
-  let count = 0;
-  for (let c of word) {
-    if (vowels.includes(c)) {
-      count++;
-    }
+  let result = "";
+  let size = word.length;
+  for (let i = 0; i < size; i++) {
+    result += word[size - i - 1];
   }
-  return count;
+
+  return result;
 }
