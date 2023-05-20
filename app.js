@@ -1,12 +1,4 @@
-var account = {
-  name: "Alex",
-  balance: 0,
-  credit(num) {
-    this.balance += num;
-  },
-  describe() {
-    return `${this.name} has $ ${this.balance} in his bank account`;
-  },
-};
-
-console.log(account.describe());
+var musketeers = ["Athos", "Porthos", "Aramis"];
+musketeers.push("D' Artagnan");
+musketeers.splice(2, 1);
+console.log(musketeers);
