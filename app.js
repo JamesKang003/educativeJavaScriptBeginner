@@ -1,14 +1,14 @@
 var words = {
   list: [],
   addWord(input) {
-    if (!input.endsWith("ing")) {
+    if (!input.startsWith("Coc")) {
       this.list.push(input);
     }
   },
 };
-words.addWord("Hello");
-words.addWord("World");
-words.addWord("Working");
-words.addWord("London");
+words.addWord("Cookie");
+words.addWord("Cool");
+words.addWord("Coconut");
+words.addWord("Cook");
 
 console.log(words.list);
