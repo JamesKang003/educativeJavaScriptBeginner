@@ -1,6 +1,12 @@
-function olderMovies(movieList) {
-  // TODO: Return an array of the titles of movies released before 2000
-  oldMovies = movieList.filter((x) => x.year < 2000);
-  oldMovieTitles = oldMovies.map((x) => x.title);
-  return oldMovieTitles;
+function findSum(array) {
+  //your code goes here//
+  let sum = 0;
+  for (num of array) {
+    if (num.length == undefined) {
+      sum += num;
+    } else {
+      sum += findSum(num);
+    }
+  }
+  return sum;
 }
