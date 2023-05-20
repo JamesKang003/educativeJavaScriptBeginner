@@ -1,14 +1,11 @@
-function length(word) {
+function vowels(word) {
   // Write - Your - Code
-  return word.length;
-}
-
-function lowerCase(word) {
-  // Write - Your - Code
-  return word.toLowerCase();
-}
-
-function upperCase(word) {
-  // Write - Your - Code
-  return word.toUpperCase();
+  let vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
+  for (let c of word) {
+    if (vowels.includes(c)) {
+      count++;
+    }
+  }
+  return count;
 }
